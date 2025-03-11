@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: url("/assets/images/cal-bg.jpg") no-repeat center center/cover;
+}
+.calculator {
+  width: 300px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.display-container {
+  display: flex;
+  align-items: center;
+}
+
+.display {
+  width: 80%;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  flex: 1;
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+button.operator {
+  background-color: #d4af91;
+}
+button.equals {
+  background-color: #6ac17b;
+}
+button.clear {
+  background-color: #f4a261;
+}
+
+button:hover {
+  background-color: #b85fc9;
+}
+
+.clear {
+  margin-right: 10px;
+}
+
+.equals:hover {
+  background-color: #c9c45f;
+}
+
+.clear:hover {
+  background-color: #f4a261;
+}
